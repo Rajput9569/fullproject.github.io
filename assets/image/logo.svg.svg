@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="64" viewBox="0 0 220 64">
+  <rect width="220" height="64" rx="8" fill="#10C5F2"></rect>
+  <g transform="translate(12,10)">
+    <circle cx="16" cy="16" r="14" fill="#fff"></circle>
+    <text x="40" y="23" font-family="Arial" font-weight="700" font-size="14" fill="#fff">COMPLETE MY</text>
+    <text x="40" y="40" font-family="Arial" font-weight="700" font-size="14" fill="#fff">ONLINE CLASS</text>
+  </g>
+</svg>

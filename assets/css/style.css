@@ -1,0 +1,198 @@
+/* assets/css/style.css - Tailwind-free minimal CSS to match blue navbar look */
+
+:root {
+    --brand-blue: #10C5F2;
+    --orange: #ff8a00;
+    --nav-height: 76px;
+    --accent: #0a74a6;
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    margin: 0;
+    color: #222;
+    background: #f4f7fb;
+}
+
+.header {
+    background: var(--brand-blue);
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.header .wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.logo img {
+    height: 54px;
+}
+
+.nav {
+    display: flex;
+    gap: 26px;
+    align-items: center;
+    font-weight: 600;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 6px 0;
+    position: relative;
+}
+
+.nav a:hover::after,
+.nav a.active::after {
+    content: '';
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    height: 4px;
+    background: var(--orange);
+    bottom: -10px;
+    border-radius: 2px;
+}
+
+.cta {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.btn {
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    font-weight: 700;
+}
+
+.btn-quote {
+    background: var(--orange);
+    color: #fff;
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.06);
+}
+
+.btn-enroll {
+    background: transparent;
+    color: #fff;
+    text-decoration: underline;
+}
+
+
+/* Mobile */
+
+.mobile-toggle {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: #fff;
+}
+
+
+/* Hero */
+
+.hero {
+    height: 460px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('assets/images/hero.svg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero .container {
+    max-width: 1100px;
+    color: #fff;
+    text-align: center;
+    padding: 40px;
+}
+
+.hero h1 {
+    font-size: 44px;
+    margin: 0 0 12px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 0 0 18px;
+    opacity: 0.95;
+}
+
+.hero .actions {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+
+/* Main content */
+
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 18px;
+}
+
+
+/* Footer */
+
+.footer {
+    background: #062f3f;
+    color: #cfeefc;
+    padding: 26px 20px;
+    margin-top: 40px;
+}
+
+.footer .wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+
+/* Responsive */
+
+@media(max-width:900px) {
+    .nav {
+        display: none
+    }
+    .mobile-toggle {
+        display: block
+    }
+    .hero {
+        height: 360px
+    }
+}

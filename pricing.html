@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Pricing - Complete My Online Class</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body data-page="pricing">
+    <!-- Header -->
+    <header class="header">
+        <div class="wrap">
+            <div class="logo" onclick="location.href='index.html'"><img src="assets/images/logo.svg" alt="logo" /></div>
+            <nav class="nav">
+                <a href="index.html" data-page="home">Home</a>
+                <a href="about.html" data-page="about">About</a>
+                <a href="what-we-offer.html" data-page="offer">What We Offer</a>
+                <a href="faq.html" data-page="faq">FAQ</a>
+                <a href="pricing.html" data-page="pricing">Pricing</a>
+                <a href="library.html" data-page="library">Library ▼</a>
+                <a href="blog.html" data-page="blog">Blog</a>
+                <a href="contact.html" data-page="contact">Contact</a>
+            </nav>
+            <div class="cta">
+                <a class="btn btn-enroll" href="enroll.html">Enroll Now</a>
+                <button class="btn btn-quote" onclick="location.href='get-a-quote.html'">Get A Quote</button>
+                <button class="mobile-toggle" id="mobileToggle">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <div id="mobileMenu" class="mobile" style="display:none; background:var(--brand-blue); color:#fff; padding:12px;">
+        <a href="index.html" style="display:block; padding:8px 0;">Home</a>
+        <a href="about.html" style="display:block; padding:8px 0;">About</a>
+        <a href="what-we-offer.html" style="display:block; padding:8px 0;">What We Offer</a>
+        <a href="faq.html" style="display:block; padding:8px 0;">FAQ</a>
+        <a href="pricing.html" style="display:block; padding:8px 0;">Pricing</a>
+        <a href="library.html" style="display:block; padding:8px 0;">Library</a>
+        <a href="blog.html" style="display:block; padding:8px 0;">Blog</a>
+        <a href="contact.html" style="display:block; padding:8px 0;">Contact</a>
+        <a href="enroll.html" style="display:block; padding:8px 0;">Enroll Now</a>
+        <a href="get-a-quote.html" style="display:block; padding:8px 0;">Get A Quote</a>
+    </div>
+
+    <section class="container">
+        <h1>Pricing</h1>
+        <div class="cards">
+            <div style="background:#fff;padding:16px;border-radius:8px;">
+                <h3>Basic — ₹1,999</h3>
+            </div>
+            <div style="background:#fff;padding:16px;border-radius:8px;">
+                <h3>Pro — ₹4,999</h3>
+            </div>
+            <div style="background:#fff;padding:16px;border-radius:8px;">
+                <h3>Premium — ₹8,999</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="wrap">
+            <div>© 2025 Complete My Online Class</div>
+            <div style="opacity:0.9">Privacy • Terms • Contact</div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        var mt = document.getElementById('mobileToggle');
+        var mm = document.getElementById('mobileMenu');
+        if (mt && mm) mt.addEventListener('click', function() {
+            mm.style.display = mm.style.display === 'none' ? 'block' : 'none';
+        });
+    </script>
+</body>
+
+</html>
